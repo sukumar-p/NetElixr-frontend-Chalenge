@@ -1,0 +1,23 @@
+.setting-border{
+    padding: 10px;
+}
+.colorMarking{
+    color: blue;
+    cursor: pointer;
+}
+table{
+    border-spacing: 5px;
+    /* border-collapse: collapse; */
+    border: none;
+    margin: 10px;
+}
+td, th {
+    padding: 10px;
+}
+tr{
+    color: black;
+    font-weight: bold;
+}
+.feedback{
+    
+}

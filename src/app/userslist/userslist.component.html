@@ -1,0 +1,38 @@
+
+
+
+    <!-- <div class="form-group">
+        <label for="name">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="userData.email" placeholder="enter email" id="name" required>
+      </div>
+
+      <button type="submit" class="btn btn-success" (click)="getusersListemail()">Submit</button> -->
+      <div class="col-xs-6">
+  <table border="2" *ngIf="data" class="setting-border">
+    <thead>
+      <tr>
+        <td >Name</td>
+        <td>Email</td>
+        <td>Dateofjpioning</td>
+        <td>EmployeeId</td>
+        <td>Designation</td>
+      </tr>
+
+      <tr *ngFor="let userlist of data.addDetails">
+        <td>{{userlist.Name}}</td>
+        <td>{{userlist.Email}}</td>
+        <td>{{userlist.DateOfJoining}}</td>
+        <td>{{userlist.EmpId}}</td> 
+        <td>{{userlist.Designation}}</td>
+      </tr>
+      <div class="feedback">
+        <button type="submit" class="btn btn-success" (click)="submitfedback()">SubmitFeedBack</button>
+      </div>
+      
+    </thead>
+  </table>
+
+
+  <button type="submit" class="btn btn-success" (click)="getuserslist()">Getuserslist</button>
+</div>
+
